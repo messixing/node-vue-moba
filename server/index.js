@@ -9,5 +9,5 @@ app.use('/', express.static(__dirname + '/web')) /*托管静态文件*/
 require('./routes/admin')(app)
 require('./plugins/db')(app)
 require('./routes/web')(app)
-app.get('/', (req, res) => res.send('Hello World!'))
+    //app.get('/', (req, res) => res.send(''))
 app.listen(3000, () => console.log(`http://localhost:3000`))
